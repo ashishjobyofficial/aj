@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Joby-Website</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/3bc953ef2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            
+            <nav><img src="" alt="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer,Programmer</p>
+                <h1>Hey,I'm <span>Ashish Joby</span> <br> from India</h1>
+            </div>
+        </div>
+    </div>
+   <!-------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>kjjarjggjgblnrgolrnjnasgisi g s gaoghsaifgusfgsai fghsa fgsafxzgsafg sgsfgsfg fgsafghguifagu aiuufhg adsufg afghsfhgi sahfighaisfhgasfogsiafhgoig safuhoisufzhszfihsfiz ashhzfigsafuhasfuhvsa uuvasfdvuuhsfvuufhdv fuudvfuuvhhuf vsuudfavhhfuuvhfdx v</p>
+               
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Dev</span><br>WebSite Development</li>
+                            <li><span>Programming</span><br>C<br>Java</li>
+                            <li><span>Algorithms</span><br>Algorithms</li>
+        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-2024</span><br>WebSite Development</li>
+                            <li><span>2024-2025</span><br>C<br>Java</li>
+                            <li><span>2025-2026</span><br>Algorithms</li>
+        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.tech CSE</span><br>WebSite Development</li>
+                            <li><span>HSE</span><br>C<br>Java</li>
+                            <li><span>HS</span><br>Algorithms</li>
+        
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-------------services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-web-awesome"></i>
+                <h2>Web Devleopment</h2>
+                <p>bygvs dbuvsdagvsfdgiv givfs givfs givf igvfsg ifvsig fvig fvg ifv</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Devleopment</h2>
+                <p>bygvs dbuvsdagvsfdgiv givfs givfs givf igvfsg ifvsig fvig fvg ifv</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Devleopment</h2>
+                <p>bygvs dbuvsdagvsfdgiv givfs givfs givf igvfsg ifvsig fvig fvg ifv</p>
+                <a href="#">Learn More</a>
+            </div>
+          
+        </div>
+
+    </div>
+</div>
+
+<!-------------------portfolio-------------------->
+
+
+
+</body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+    {
+        tablink.classList.remove("active-link");
+    }
+   
+        for(tabcontent of tabcontents)
+    {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+
+
+</script>
+</html>
